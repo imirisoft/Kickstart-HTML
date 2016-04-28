@@ -5,7 +5,9 @@
 Make sure your system is configured with [Nodejs], [NPM] and [Gulp]
 
 ### Configuration
-
+```
+$ npm install nodemon -g
+```
 ```
 $ npm install
 ```
