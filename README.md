@@ -12,7 +12,7 @@ Make sure your system is configured with [Nodejs], [NPM] and [Gulp]
 
 Now you add play with the view files
 
-# Contribute to kickstart complex application with less effort
+## Contribute to kickstart complex application with less effort
 [https://github.com/imirisoft/Kickstart-HTML]
 
 [Nodejs]: <https://nodejs.org>
