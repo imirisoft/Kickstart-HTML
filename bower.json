@@ -1,0 +1,24 @@
+{
+  "name": "HTML skeleton to kickstart",
+  "version": "1.0.0",
+  "authors": [
+    "Imirisoft"
+  ],
+  "description": "HTML skeleton to kickstart html development",
+  "keywords": [
+    "html-skeleton-to-kickstart"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.2.3",
+    "components-font-awesome": "~4.6.1"
+  }
+}
