@@ -21,6 +21,8 @@ $ Clone [Gulp Less Watcher] to the application root
 $ nodemon app.js
 ```
 
+By default the application will run in **3000 port** ```http://localhost:3000```. Feel free to add, modify, edit or remove the template
+
 Now you add play with the view files
 
 ## Contribute

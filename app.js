@@ -19,8 +19,9 @@ app.use(express.static('public'));
 glob('./views/*.ejs', {}, function(er, files) {
 	files.forEach(function(file_path) {
 		var route_name = path.basename(file_path, '.ejs');
+		var route = (route_name=='index')?'/':'/'+route_name;
 		// Dynamically build up the routes
-		app.get('/'+route_name, function(req, res) {
+		app.get(route, function(req, res) {
 			res.render(route_name);
 		});
 	});
