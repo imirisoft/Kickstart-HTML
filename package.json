@@ -1,0 +1,21 @@
+{
+  "name": "html-skeleton-to-kickstart",
+  "version": "1.0.0",
+  "description": "HTML skeleton to kickstart html development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html-skeleton-to-kickstart"
+  ],
+  "author": "Imirisoft",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "glob": "^7.0.3",
+    "nodemon": "^1.9.1",
+    "path": "^0.12.7"
+  }
+}
