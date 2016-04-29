@@ -4,18 +4,23 @@ var express = require('express'),
 	glob = require('glob'),
 	path = require('path'),
 	ejs = require('ejs'),
-	fs = require('fs'),
+	fs = require('fs-extra'),
 	config;
 
 // throw all your configurations here
 config = {
 	port: 3000,
-	html: './html/'
+	html: './html/',
+	bower_components: './bower_components',
+	source_assets: './public/',
+	destination_assets: './html',
+	converter: false
 };
 
 // The converter
 process.argv.forEach((val, index, array) => {
 	if(val=='html') {
+		config.converter = true;
 		// EJS to HTML generator
 		glob('./views/*.ejs', {}, function(er, files) {
 			var html_dir = config.html;
@@ -53,6 +58,8 @@ process.argv.forEach((val, index, array) => {
 				});
 			});
 		});
+		// Copy the assets
+		fs.copy(config.source_assets, config.destination_assets);
 		return;
 	}
 });
@@ -60,7 +67,6 @@ process.argv.forEach((val, index, array) => {
 app.set('view engine', 'ejs');
 app.engine('.html', ejs.renderFile);
 
-app.use(express.static('bower_components'));
 app.use(express.static('public'));
 
 // Get all the template files
@@ -76,7 +82,11 @@ glob('./views/*.ejs', {}, function(er, files) {
 });
 
 // Listing to the custom port
-app.listen(config.port, function() {
+var listener = app.listen(config.port, function() {
 	// You can code now with fun
 	console.log('You application started and running at ' + config.port);
 });
+
+if(config.converter) {
+	listener.close();
+}
