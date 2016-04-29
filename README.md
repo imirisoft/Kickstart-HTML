@@ -23,6 +23,13 @@ $ bower install
 $ Clone [Gulp Less Watcher] to the application root
 ```
 
+### Options
+**Port**
+* By default application will start in 3000 port. You can customize it by adding ```PORT=3001 nodemon app.js```
+
+**Conver to HTML**
+* Run ```node app.js html```
+
 ### Run the Application
 ```
 $ nodemon app.js
