@@ -9,7 +9,7 @@ var express = require('express'),
 
 // throw all your configurations here
 config = {
-	port: 3000,
+	port: process.env.PORT || 3000,
 	html: './html/',
 	bower_components: './bower_components',
 	source_assets: './public/',
