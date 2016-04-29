@@ -1,6 +1,6 @@
 # Kickstart-HTML
 
-Kickstart HTML is created for designer who hate copy pasting all common stuffs E.g., header, footer, etc., This tiny much needed tool helps designer to add all common stuffs in partials and specific stuffs in views directory. Finished! convert the template to html and handover to Developers. Have fun!!
+Kickstart HTML is created for designer who hate copy pasting all common stuffs E.g., header, footer, etc., to all the files. This tiny much needed tool help designers to add all common stuffs in partials directory and specific stuffs in views directory. Finished designing! now convert the template to html and handover to developers. Have fun!!
 
 ## Installation
 
@@ -40,10 +40,11 @@ ejs to html made easy in just a command, only top level conversion works
 ```
 $ node app.js html
 ```
+* Now you will see html directory created with all the html stuff. Each time when you run the above command will replace the existing files.
 
 ## Contribute to
 * Test and Improve performance
-* Updated version to all existing Kickstart-HTML
+* Install updated version to all existing Kickstart-HTML
 * Help designers to kickstart the application with few commands with more features
 
 [https://github.com/imirisoft/Kickstart-HTML]
