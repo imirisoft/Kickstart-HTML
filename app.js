@@ -64,8 +64,17 @@ process.argv.forEach((val, index, array) => {
 	}
 });
 
+// Listing to the custom port
+var listener = app.listen(config.port, function() {
+	// You can code now with fun
+	console.log('You application started and running at ' + config.port);
+});
+
+if(config.converter) {
+	listener.close();
+}
+
 app.set('view engine', 'ejs');
-app.engine('.html', ejs.renderFile);
 
 app.use(express.static('public'));
 
@@ -80,13 +89,3 @@ glob('./views/*.ejs', {}, function(er, files) {
 		});
 	});
 });
-
-// Listing to the custom port
-var listener = app.listen(config.port, function() {
-	// You can code now with fun
-	console.log('You application started and running at ' + config.port);
-});
-
-if(config.converter) {
-	listener.close();
-}

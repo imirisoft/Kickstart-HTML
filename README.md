@@ -28,7 +28,8 @@ $ Clone [Gulp Less Watcher] to the application root
 $ nodemon app.js
 ```
 
-By default the application will run in **3000 port** ```http://localhost:3000```. Feel free to add, modify, edit or remove the template
+* By default the application will run in **3000 port** ```http://localhost:3000```. Feel free to add, modify, edit or remove the template
+* ```http://localhost:3000/show``` for file that resides in ```views/show.ejs```.
 
 Now you can play with the view files
 
