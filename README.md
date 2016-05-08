@@ -1,6 +1,6 @@
 # Kickstart-HTML
 
-Kickstart HTML is created for designer who hate copy pasting all common stuffs E.g., header, footer, etc., to all the files. This tiny much needed tool help designers to add all common stuffs in partials directory and specific stuffs in views directory. Finished designing! now convert the template to html and handover to developers. Have fun!!
+Kickstart HTML is created for designer who hate copy pasting all common stuffs E.g., header, footer, etc., to all the files. This tiny much needed tool help designers to add all common stuffs in partials directory and specific stuffs in views directory. Finished designing! now convert the template to html and handover to developers. Have fun!! :)
 
 ## Installation
 
